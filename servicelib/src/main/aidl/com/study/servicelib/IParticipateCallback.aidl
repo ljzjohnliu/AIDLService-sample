@@ -1,5 +1,5 @@
 // IParticipateCallback.aidl
-package com.race604.servicelib;
+package com.study.servicelib;
 
 interface IParticipateCallback {
     // 用户加入或者离开的回调

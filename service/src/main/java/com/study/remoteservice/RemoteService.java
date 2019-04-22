@@ -1,4 +1,4 @@
-package com.race604.remoteservice;
+package com.study.remoteservice;
 
 import android.app.Service;
 import android.content.Intent;
@@ -7,8 +7,8 @@ import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.race604.servicelib.IParticipateCallback;
-import com.race604.servicelib.IRemoteService;
+import com.study.servicelib.IParticipateCallback;
+import com.study.servicelib.IRemoteService;
 
 import java.util.ArrayList;
 import java.util.List;

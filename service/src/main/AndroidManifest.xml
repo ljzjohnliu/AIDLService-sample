@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.race604.remoteservice" >
+    package="com.study.remoteservice" >
 
     <application
         android:allowBackup="true"
@@ -8,17 +8,17 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <service
-            android:name=".RemoteService"
+            android:name="com.study.remoteservice.RemoteService"
             android:enabled="true"
             android:exported="true" >
 
             <intent-filter>
-                <action android:name="com.race604.servicelib.IRemoteService" />
+                <action android:name="com.study.servicelib.IRemoteService" />
             </intent-filter>
         </service>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.study.remoteservice.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,4 @@
-package com.race604.client;
+package com.study.client;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -7,21 +7,21 @@ import android.os.Binder;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.race604.servicelib.IParticipateCallback;
-import com.race604.servicelib.IRemoteService;
+import com.study.servicelib.IParticipateCallback;
+import com.study.servicelib.IRemoteService;
 
 import java.util.List;
 import java.util.Random;
 
 
-public class MainActivity extends ActionBarActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
@@ -125,8 +125,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.bind:
                 Intent intent = new Intent(IRemoteService.class.getName());
-                intent.setClassName("com.race604.remoteservice", "com.race604.remoteservice.RemoteService");
-                //intent.setPackage("com.race604.remoteservice");
+                intent.setClassName("com.study.remoteservice", "com.study.remoteservice.RemoteService");
+                //intent.setPackage("com.study.remoteservice");
                 bindService(intent, mServiceConnection, BIND_AUTO_CREATE);
                 mIsBound = true;
                 break;

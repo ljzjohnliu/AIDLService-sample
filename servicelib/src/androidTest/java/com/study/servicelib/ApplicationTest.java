@@ -1,4 +1,4 @@
-package com.race604.remoteservice;
+package com.study.servicelib;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
